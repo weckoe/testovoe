@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME PAGE</title>
+</head>
+<body>
+	{%  for url in all_urls%}
+	<a><h1>URL</h1>:   {{ url.url }}, <h1>Short URL</h1>http://127.0.0.1:8000/slug/{{ url.shorter_url }}</a>
+	{% endfor %}
+</body>
+</html>
